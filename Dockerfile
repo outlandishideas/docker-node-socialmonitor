@@ -7,3 +7,5 @@ RUN apk --no-cache add --virtual native-deps \
   npm install --quiet node-gyp -g &&\
   npm install --quiet && \
   apk del native-deps
+
+RUN apk update && apk add python
